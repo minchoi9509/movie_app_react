@@ -1,17 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+/* 
+    jsx: javascript + html 조합, react 특화 개념
+    리액트 어플리케이션은 하나의 컴포넌트만 랜더링 해야함
+    -> vue에서 index.html에 main.js에서 app 컴포넌트 하나 넣는 것과 비슷한듯 
+*/
+ReactDOM.render(<App />, document.getElementById('root'));
